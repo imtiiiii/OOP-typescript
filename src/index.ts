@@ -1,7 +1,13 @@
+//* By default it is public */
 class Animal {
-  name: string;
-  sound: string;
-  constructor(name: string, sound: string) {
+  //*No need of below initializer when using access modifier  ex : public , private directly in constructor */
+  // name: string;
+  // sound: string;
+
+  constructor(
+    public name: string,
+    public sound: string,
+  ) {
     this.name = name;
     this.sound = sound;
   }
