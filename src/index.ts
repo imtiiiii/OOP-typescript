@@ -36,3 +36,11 @@ class Teacher extends SchoolMember {
     return this.designation;
   }
 }
+
+const teacherHamid = new Teacher("Hamid", 35, "Math Teacher");
+// console.log("teacher Hamid name", teacherHamid.getName());
+// console.log("teacher Hamid age", teacherHamid.getAge());
+// console.log("teacher Hamid designation", teacherHamid.getDesignation());
+
+const studentTanvir = new Student("Tanvir", 15, 10);
+// console.log("tanvir", studentTanvir.getStudentInfo());
