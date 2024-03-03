@@ -3,7 +3,12 @@ class Animal {
   //*No need of below initializer when using access modifier  ex : public , private directly in constructor */
   // name: string;
   // sound: string;
+  // constructor(name: string, sound: string) {
+  //  this.name = name;
+  // this.sound = sound;
+  // }
 
+  //* Above code can be written as below */
   constructor(
     public name: string,
     public sound: string,
