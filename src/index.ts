@@ -4,16 +4,19 @@ class Counter {
     Counter.count = value;
   }
 
-  increment(): number {
+  static increment(): number {
     return ++Counter.count;
   }
 
-  decrement(): number {
+  static decrement(): number {
     return --Counter.count;
   }
 }
 const instance1 = new Counter(10);
 const instance2 = new Counter(20);
 // console.log("counter", instance1);
-console.log("new counter 1", instance1.increment());
-console.log("new counter 2", instance2.increment());
+// console.log("new counter 1", instance1.increment());
+// console.log("new counter 2", instance2.increment());
+
+console.log("new counter 1", Counter.increment());
+console.log("new counter 2", Counter.increment());
