@@ -1,5 +1,5 @@
 class Shape {
-  getArea() {}
+  getArea(): void {}
 }
 class Circle extends Shape {
   radius: number;
@@ -7,7 +7,7 @@ class Circle extends Shape {
     super();
     this.radius = radius;
   }
-  getArea() {
+  getArea(): number {
     return 3.14 * this.radius ** 2;
   }
 }
@@ -17,7 +17,7 @@ class Square extends Shape {
     super();
     this.side = side;
   }
-  getArea() {
+  getArea(): number {
     return this.side * this.side;
   }
 }
@@ -29,7 +29,7 @@ class Rectangle extends Shape {
     this.length = length;
     this.width = width;
   }
-  getArea() {
+  getArea(): number {
     return this.length * this.width;
   }
 }
