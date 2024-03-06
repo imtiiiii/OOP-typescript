@@ -16,10 +16,10 @@ class Animal {
     this.name = name;
     this.sound = sound;
   }
-  makeSound() {
+  makeSound():string {
     return `${this.name} says ${this.sound}`;
   }
-  getName() {
+  getName():string {
     return this.name;
   }
 }

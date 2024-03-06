@@ -5,10 +5,10 @@ class SchoolMember {
     this.name = name;
     this.age = age;
   }
-  public getName() {
+  public getName(): string {
     return this.name;
   }
-  public getAge() {
+  public getAge(): number {
     return this.age;
   }
 }
@@ -18,10 +18,10 @@ class Student extends SchoolMember {
     super(name, age);
     this.grade = grade;
   }
-  public getGrade() {
+  public getGrade(): number {
     return this.grade;
   }
-  public getStudentInfo() {
+  public getStudentInfo(): string {
     return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
   }
 }
@@ -32,7 +32,7 @@ class Teacher extends SchoolMember {
     super(name, age);
     this.designation = designation;
   }
-  public getDesignation() {
+  public getDesignation(): string {
     return this.designation;
   }
 }

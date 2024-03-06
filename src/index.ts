@@ -11,7 +11,7 @@ abstract class Camera {
   abstract takePicture(): void;
 }
 class Iphone extends Camera {
-  takePicture() {
+  takePicture(): void {
     console.log(
       `Taking picture in ${this.mode} mode and saving it to ${this.file}`
     );
